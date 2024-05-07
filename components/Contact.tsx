@@ -1,8 +1,10 @@
-import {useInView} from "react-intersection-observer";
+"use client";
+
 import {useTheme} from "next-themes";
+import {useInView} from "react-intersection-observer";
 import {useEffect} from "react";
 
-export const Part2 = () => {
+export const Contact = () => {
     const {setTheme} = useTheme();
     const { ref, inView } = useInView({
         threshold: 0.5,
@@ -16,8 +18,7 @@ export const Part2 = () => {
         }
     }, [inView]);
 
-
-    return <article ref={ref}>
-        <h1>Part2</h1>
-    </article>;
+    return <section ref={ref} id={'contact'}>
+        <h2>Contact</h2>
+    </section>;
 }

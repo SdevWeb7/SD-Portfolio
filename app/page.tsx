@@ -1,17 +1,26 @@
-"use client"
+import {Intro} from "@/components/Intro";
+import {About} from "@/components/About";
+import {Header} from "@/components/Header";
+import {Projects} from "@/components/Projects";
+import {Contact} from "@/components/Contact";
 
 
+export default function Home() {
 
-import {Part1} from "@/components/Part1";
-import {Part2} from "@/components/Part2";
+  return <>
 
-export default function Home() : JSX.Element {
+      <Header />
 
-  return <main>
 
-    <h1>HOME</h1>
-    <Part1 />
-    <Part2 />
+      <main className={'main'}>
 
-    </main>;
+        <Intro />
+
+        <About />
+
+        <Projects />
+
+        <Contact />
+
+    </main></>;
 }

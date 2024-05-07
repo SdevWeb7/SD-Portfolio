@@ -1,0 +1,40 @@
+.header {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  box-shadow: 0 0 2px 2px var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background);
+  transition: transform .3s ease-in-out;
+
+  .logo {
+    width: 2rem;
+    height: auto;
+  }
+
+  .navbar {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    span {
+      color: var(--primary);
+    }
+  }
+}
+.invisible-header {
+  transform: translateY(-100%);
+  transition: transform .3s ease-in-out;
+}
+
+@media screen and (max-width: 500px){
+  .header {
+
+    .navbar {
+      display: none;
+    }
+  }
+
+}

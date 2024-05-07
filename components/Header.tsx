@@ -1,9 +1,43 @@
+"use client"
+
+import logo from '@/public/images/logo_1.svg';
+import Image from "next/image";
+import Link from "next/link";
+import {useState} from "react";
+import {Menu} from "@/components/Menu";
+import {useScrollY} from "@/hooks/useScrollY";
+
 
 export const Header = () => {
-    return <header>
+    const [isOpenMenu, setIsOpenMenu] = useState(false);
+
+    return <header
+            className={`header`}>
+
+        <Link href={"#intro"}>
+            <Image
+                src={logo}
+                alt={'logo SD-Portfolio'}
+                id={'logo'}
+                className={'logo'} />
+        </Link>
 
 
-        <h1>SD-Portfolio</h1>
-        </header>;
+        <nav
+            className={`burger ${isOpenMenu ? 'burger-close' : ''}`}
+            onClick={() => setIsOpenMenu(v => !v)}>
+            <div></div>
+            <div></div>
+            <div></div>
+        </nav>
 
+        <nav className="navbar">
+            <Link href={'#about'}><span>01.</span>About</Link>
+            <Link href={'#projects'}><span>02.</span>Projects</Link>
+            <Link href={'#contact'}><span>03.</span>Contact</Link>
+        </nav>
+
+        {isOpenMenu && <Menu setIsOpenMenu={setIsOpenMenu} />}
+
+    </header>;
 }
