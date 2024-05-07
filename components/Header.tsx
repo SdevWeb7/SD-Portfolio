@@ -1,11 +1,10 @@
 "use client"
 
-import logo from '@/public/images/logo_1.svg';
+import logo from '@/public/images/Logo_1.svg';
 import Image from "next/image";
 import Link from "next/link";
 import {useState} from "react";
 import {Menu} from "@/components/Menu";
-import {useScrollY} from "@/hooks/useScrollY";
 
 
 export const Header = () => {
