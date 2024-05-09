@@ -11,6 +11,9 @@
 @import "components";
 @import "intro";
 @import "mail-modal";
+@import "parcours";
+@import "projects";
+@import "footer";
 
 body {
   background-color: var(--background);
@@ -29,8 +32,15 @@ body {
   z-index: -1;
 }
 h2 {
-  font-family: Rubik;
+  //font-family: "Source Code Pro";
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   padding-top: 80px;
+}
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 3rem;
+    }
+
 }

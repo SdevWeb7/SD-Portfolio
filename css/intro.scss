@@ -10,6 +10,9 @@
   h2 {
     padding: 0;
   }
+  .title {
+    font-size: 1.6rem;
+  }
 
   .badges {
     margin-top: 1rem;
@@ -41,4 +44,13 @@
       height: 25px;
     }
   }
+}
+
+@media screen and (max-width: 500px) {
+    #intro {
+        .reseaux nav {
+          flex-direction: row;
+        }
+    }
+
 }

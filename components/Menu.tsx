@@ -9,9 +9,9 @@ export const Menu: React.FC<MenuProps> = ({setIsOpenMenu}) => {
     return createPortal(<nav className="menu">
 
 
-        <a href="#about" onClick={() => setIsOpenMenu(false)}><span>01.</span>About</a>
+        <a href="#parcours" onClick={() => setIsOpenMenu(false)}><span>01.</span>Parcours</a>
         <a href="#projects" onClick={() => setIsOpenMenu(false)}><span>02.</span>Projects</a>
-        <a href="#contact" onClick={() => setIsOpenMenu(false)}><span>03.</span>Contact</a>
+        <a href="#footer" onClick={() => setIsOpenMenu(false)}><span>03.</span>Contact</a>
 
     </nav>, document.body);
 }

@@ -22,12 +22,12 @@ export const Intro = () => {
 
 
     return <section id={'intro'}>
-        <h2>Steven Durand</h2>
+        <h2>Steven</h2>
         <p className={'title'}>Développeur web full-stack junior</p>
         <p className={'badges'}>
             <span className={'badge'}>Next.js</span>
             <span className={'badge'}>React</span>
-            <span className={'badge'}>Scss</span>
+            <span className={'badge'}>Symfony</span>
         </p>
 
 

@@ -26,9 +26,9 @@ export const Header = () => {
         </nav>
 
         <nav className="navbar">
-            <Link href={'#about'}><span>01.</span>About</Link>
+            <Link href={'#parcours'}><span>01.</span>Parcours</Link>
             <Link href={'#projects'}><span>02.</span>Projects</Link>
-            <Link href={'#contact'}><span>03.</span>Contact</Link>
+            <Link href={'#footer'}><span>03.</span>Contact</Link>
         </nav>
 
         {isOpenMenu && <Menu setIsOpenMenu={setIsOpenMenu} />}
