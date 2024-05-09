@@ -7,7 +7,7 @@ import {useEffect} from "react";
 export const About = () => {
     const {setTheme} = useTheme();
     const { ref, inView } = useInView({
-        threshold: 0.6,
+        threshold: 1,
     })
 
     useEffect(() => {
@@ -21,5 +21,16 @@ export const About = () => {
 
     return <section ref={ref} id={"about"}>
         <h2>About</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi distinctio dolore exercitationem expedita illum, ipsam iure labore neque odio pariatur suscipit, vitae. A accusamus iure possimus quidem soluta vitae voluptate!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi distinctio dolore exercitationem expedita illum, ipsam iure labore neque odio pariatur suscipit, vitae. A accusamus iure possimus quidem soluta vitae voluptate!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi distinctio dolore exercitationem expedita illum, ipsam iure labore neque odio pariatur suscipit, vitae. A accusamus iure possimus quidem soluta vitae voluptate!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi distinctio dolore exercitationem expedita illum, ipsam iure labore neque odio pariatur suscipit, vitae. A accusamus iure possimus quidem soluta vitae voluptate!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi distinctio dolore exercitationem expedita illum, ipsam iure labore neque odio pariatur suscipit, vitae. A accusamus iure possimus quidem soluta vitae voluptate!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi distinctio dolore exercitationem expedita illum, ipsam iure labore neque odio pariatur suscipit, vitae. A accusamus iure possimus quidem soluta vitae voluptate!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi distinctio dolore exercitationem expedita illum, ipsam iure labore neque odio pariatur suscipit, vitae. A accusamus iure possimus quidem soluta vitae voluptate!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi distinctio dolore exercitationem expedita illum, ipsam iure labore neque odio pariatur suscipit, vitae. A accusamus iure possimus quidem soluta vitae voluptate!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi distinctio dolore exercitationem expedita illum, ipsam iure labore neque odio pariatur suscipit, vitae. A accusamus iure possimus quidem soluta vitae voluptate!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi distinctio dolore exercitationem expedita illum, ipsam iure labore neque odio pariatur suscipit, vitae. A accusamus iure possimus quidem soluta vitae voluptate!</p>
     </section>;
 }

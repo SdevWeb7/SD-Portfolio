@@ -7,9 +7,11 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--background);
-  transition: transform .3s ease-in-out;
+  //transition: transform .3s ease-in-out;
+  z-index: 1000;
 
-  .logo {
+  #logo {
+    color: var(--primary);
     width: 2rem;
     height: auto;
   }
@@ -24,10 +26,10 @@
     }
   }
 }
-.invisible-header {
-  transform: translateY(-100%);
-  transition: transform .3s ease-in-out;
-}
+//.invisible-header {
+//  transform: translateY(-100%);
+//  transition: transform .3s ease-in-out;
+//}
 
 @media screen and (max-width: 500px){
   .header {

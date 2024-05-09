@@ -1,10 +1,9 @@
 "use client"
 
-import logo from '@/public/images/Logo_1.svg';
-import Image from "next/image";
 import Link from "next/link";
 import {useState} from "react";
 import {Menu} from "@/components/Menu";
+import {Logo} from "@/svg/Logo";
 
 
 export const Header = () => {
@@ -13,12 +12,8 @@ export const Header = () => {
     return <header
             className={`header`}>
 
-        <Link href={"#intro"}>
-            <Image
-                src={logo}
-                alt={'logo SD-Portfolio'}
-                id={'logo'}
-                className={'logo'} />
+        <Link href={"#intro"} id={"logo"}>
+            <Logo />
         </Link>
 
 

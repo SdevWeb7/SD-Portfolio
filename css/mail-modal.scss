@@ -1,0 +1,58 @@
+.mail-modal {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(4px);
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .close-icon {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+  form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    box-shadow: 0 0 3px 3px var(--shadow);
+    border-radius: 5px;
+    padding: 2rem;
+
+    p {
+      font-size: 2rem;
+    }
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: .2rem;
+      background-color: white;
+      color: black;
+      width: 100%;
+      box-shadow: 0 0 1px 1px var(--shadow);
+    }
+    label {
+      margin-top: 2rem;
+    }
+
+    .btn-submit {
+      background-color: var(--primary);
+      color: whitesmoke;
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: .3rem;
+    }
+  }
+}

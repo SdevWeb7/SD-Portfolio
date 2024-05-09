@@ -5,6 +5,7 @@ import Providers from "@/hooks/Providers";
 import backgroundImage from "@/public/images/bg-portfolio.png";
 import "@/css/globals.scss";
 import {ArrowGoTop} from "@/components/ArrowGoTop";
+import {Toaster} from "react-hot-toast";
 
 export const metadata: Metadata = {
     title: "SD-Portfolio",
@@ -43,6 +44,10 @@ export default function RootLayout({
 
 
         <ArrowGoTop />
+        <Toaster
+            position="bottom-right"
+            reverseOrder={false}
+        />
         </body>
       </html>
     </>;
