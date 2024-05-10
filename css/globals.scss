@@ -14,7 +14,7 @@
 @import "parcours";
 @import "projects";
 @import "footer";
-
+html {font-size: 100%;}
 body {
   background-color: var(--background);
   font-family: "SF Mono";
@@ -39,8 +39,7 @@ h2 {
 }
 
 @media screen and (max-width: 500px) {
-    h2 {
-        font-size: 3rem;
-    }
+  html { font-size: 62.5%; }
+
 
 }
