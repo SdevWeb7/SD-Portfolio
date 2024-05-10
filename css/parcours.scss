@@ -1,3 +1,141 @@
-.parcours {
+#parcours {
+  padding-bottom: 2rem;
 
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 4rem auto 0 auto;
+  }
+  article {
+    width: 300px;
+    box-shadow: 0 0 2px 2px var(--shadow);
+    border-radius: 4px;
+  }
+
+  .description {
+    padding: 1rem;
+  }
+  ul:not(:first-child) {
+    margin-top: 2rem;
+  }
+  li {
+    margin-left: 2rem;
+  }
+
+  li:before {
+    content: "▹";
+    color: var(--primary);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  .technologies {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container-logos {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .c {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+  }
+  .python {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+  }
+  .js {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+  }
+  .php {
+    transform: translateY(30px);
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+  }
+  .sql {
+    transform: scale(1.4) translateY(20px) translateX(-55px);
+    width: 50px;
+    height: 50px;
+    path {
+
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+    }
+  }
+  .git {
+    transform: scale(.5);
+    path {
+      width: 50px;
+        height: 50px;
+    }
+  }
+  .react {
+    transform: translateY(-70px) translateX(-80px);
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+  }
+  .symfony {
+    transform: scale(1.4) translateX(10px) translateY(10px);
+    path {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+    }
+  }
+  .node {
+    transform: translateY(-20px);
+    object-fit: contain;
+    width: 130px;
+    height: 50px;
+
+  }
+  .tailwind {
+    transform: translateY(-15px) translateX(20px);
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+  }
+  .next {
+    transform: translateY(-20px);
+  }
+  .ts {
+    transform: translateY(-30px);
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+  }
+  .prisma {
+    transform: translateY(-40px) translateX(-10px);
+    width: 100px;
+    object-fit: contain;
+    height: 50px;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+  #parcours {
+    article {
+      width: 280px;
+    }
+  }
 }
