@@ -48,9 +48,15 @@
 
 @media screen and (max-width: 500px) {
     #intro {
+
+      .reseaux {
+        position: static;
+        margin: 4rem auto 0 auto;
+        bottom: unset;
+        top: 0;
+      }
         .reseaux nav {
           flex-direction: row;
-          bottom: -30px;
         }
     }
 

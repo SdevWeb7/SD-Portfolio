@@ -75,7 +75,7 @@ export const EmailBox: React.FC<MenuProps> = ({setIsOpen}) => {
 
                 <p>Me contacter</p>
 
-                <label htmlFor="email">Votre address e-mail</label>
+                <label htmlFor="email">Votre adresse e-mail</label>
                 <input
                     onChange={handleInputChange}
                     type="email"

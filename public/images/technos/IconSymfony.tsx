@@ -3,7 +3,7 @@ export const IconSymfony = (props: any) => {
 
     return <svg version="1.1" x="0px"
                 y="0px" width="50px"
-                height="70.666px" viewBox="0 0 202 223.666" enable-background="new 0 0 202 223.666" {...props}>
+                height="70.666px" viewBox="0 0 202 223.666" enableBackground="new 0 0 202 223.666" {...props}>
 <g id="fond">
 </g>
         <g id="compacte">
