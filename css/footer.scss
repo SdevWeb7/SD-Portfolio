@@ -1,0 +1,76 @@
+#footer {
+  margin-top: 4rem;
+
+  form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    max-width: 50%;
+    margin: 0 auto;
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: .2rem;
+      color: black;
+      width: 100%;
+      box-shadow: 0 0 1px 1px var(--shadow);
+    }
+    label {
+      font-size: 14px;
+      margin: 2rem 0 .3rem 0;
+    }
+
+    span {
+      margin-top: .2rem;
+      text-align: right;
+      font-size: 12px;
+      max-width: 300px;
+      margin-left: auto;
+    }
+    .btn-submit {
+      background-color: var(--primary);
+      color: whitesmoke;
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: .3rem;
+    }
+  }
+
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    .links-container {
+
+    }
+    svg {
+      width: 30px;
+        height: 30px;
+    }
+
+    .ball {
+      padding: 3px;
+      background-color: var(--text);
+      border-radius: 50%;
+    }
+  }
+
+  p {
+    margin: 2rem 0 0 0;
+    width: 100%;
+    text-align: center;
+  }
+}

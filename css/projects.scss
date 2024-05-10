@@ -1,0 +1,45 @@
+#projects {
+
+  .container {
+    margin: 4rem auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .second-project {
+    margin-top: 7rem;
+  }
+
+  img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 0 2px 2px var(--shadow);
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  .badges {
+    display: flex;
+    gap: 1rem;
+
+  }
+}
+
+@media screen and (max-width: 1000px) {
+    #projects {
+
+      img {
+        width: 80%;
+      }
+    }
+}
