@@ -1,6 +1,6 @@
 .menu {
     position: fixed;
-    top: 67px;
+    top: 44px;
     left: 0;
     width: 100%;
     padding: 1rem;
@@ -23,26 +23,26 @@
 .burger {
   display: none;
   cursor: pointer;
-  width: 2rem;
-  height: 2rem;
+  width: 20px;
+  height: 20px;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
 
   div:nth-child(1) {
-    height: 5px;
+    height: 3px;
     width: 50%;
     background-color: var(--text);
     border-radius: 4px;
   }
   div:nth-child(2) {
-    height: 5px;
+    height: 3px;
     width: 75%;
     background-color: var(--text);
     border-radius: 4px;
   }
   div:nth-child(3) {
-    height: 5px;
+    height: 3px;
     width: 100%;
     background-color: var(--text);
     border-radius: 4px;
@@ -50,21 +50,21 @@
 }
 .burger-close {
   div:nth-child(1) {
-    height: 5px;
+    height: 3px;
     width: 70%;
     background-color: var(--text);
     border-radius: 4px;
-    transform: translateY(15px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
   }
   div:nth-child(2) {
     opacity: 0;
   }
   div:nth-child(3) {
-    height: 5px;
+    height: 3px;
     width: 70%;
     background-color: var(--text);
     border-radius: 4px;
-    transform: translateY(-12px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
 .burger div, .burger-close div {

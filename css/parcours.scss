@@ -14,7 +14,7 @@
     margin: 4rem auto 0 auto;
   }
   article {
-    width: 380px;
+    width: 280px;
     box-shadow: 0 0 2px 2px var(--shadow);
     border-radius: 4px;
   }
@@ -134,9 +134,7 @@
 
 @media screen and (max-width: 840px) {
   #parcours {
-    article {
-      width: 280px;
-    }
+
 
     .git {
       transform: scale(.5);

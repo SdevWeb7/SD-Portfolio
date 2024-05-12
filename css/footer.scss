@@ -53,12 +53,12 @@
       font-size: 2rem;
     }
 
-    .links-container {
-
-    }
     svg {
       width: 30px;
-        height: 30px;
+      height: 30px;
+    }
+    svg:not(:last-child) {
+      margin-right: 1rem;
     }
 
     .ball {
@@ -72,5 +72,14 @@
     margin: 2rem 0 0 0;
     width: 100%;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #footer {
+
+    form {
+      max-width: 90%;
+    }
   }
 }
