@@ -20,8 +20,10 @@ import {IconSQL} from "@/public/images/technos/IconSQL";
 
 export const Parcours = () => {
     const {setTheme} = useTheme();
+    let threshold = .2;
+    if (typeof window !== 'undefined') threshold = window.innerWidth > 768 ? .9 : 0.2;
     const { ref, inView } = useInView({
-        threshold: .8,
+        threshold: threshold,
     })
 
     useEffect(() => {
