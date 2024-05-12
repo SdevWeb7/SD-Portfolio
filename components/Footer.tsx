@@ -12,7 +12,7 @@ import {IconFrontEndMentor} from "@/svg/IconFrontEndMentor";
 export const Footer = () => {
     const {setTheme} = useTheme();
     const { ref, inView } = useInView({
-        threshold: .9,
+        threshold: .4,
     })
     const [isPending, startTransition] = useTransition();
     const [formDatas, setFormDatas] = useState({
@@ -120,6 +120,6 @@ export const Footer = () => {
         </aside>
 
 
-        <p>&copy;Copyright 2021. Made by Steven with NextJS</p>
+        <p>&copy;Copyright 2024. Made by Steven with NextJS</p>
     </section>;
 }
