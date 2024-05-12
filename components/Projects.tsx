@@ -31,7 +31,7 @@ export const Projects = () => {
                 <h3>Youtube Reload</h3>
                 <p>Challenge Full-Stack</p>
                 <p className={'badges'}><span className="badge">Next.js</span><span
-                    className={'badge'}>Server-actions</span><span className="badge">Sass</span></p>
+                    className={'badge'}>Server-actions</span><span className="badge">Prisma</span></p>
 
                 <Link href={'https://github.com/SdevWeb7/youtube_reload'}>Code source</Link>
             </article>
