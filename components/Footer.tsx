@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 import {IconLinkedin} from "@/svg/IconLinkedin";
 import {IconGithub} from "@/svg/IconGithub";
 import {IconFrontEndMentor} from "@/svg/IconFrontEndMentor";
+import Link from "next/link";
 
 export const Footer = () => {
     const {setTheme} = useTheme();
@@ -110,9 +111,20 @@ export const Footer = () => {
             <div className="ball"></div>
             <div className="ball"></div>
 
-            <IconLinkedin className={"ml-4"} />
-            <IconGithub />
-            <IconFrontEndMentor className={'mr-4'} />
+            <Link
+                className={"ml-4"}
+                href={"https://www.linkedin.com/in/steven-durand-132a772b1/"}>
+                <IconLinkedin />
+            </Link>
+            <Link href={"https://github.com/SdevWeb7"}>
+                <IconGithub />
+            </Link>
+            <Link
+                className={'mr-4'}
+                href={"https://www.frontendmentor.io/profile/Veustyle"}>
+                <IconFrontEndMentor/>
+            </Link>
+
             <div className="ball"></div>
             <div className="ball"></div>
             <div className="ball"></div>
