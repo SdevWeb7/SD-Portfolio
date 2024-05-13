@@ -132,7 +132,16 @@
 
 }
 
-@media screen and (max-width: 840px) {
+
+@media screen and (min-width: 1030px){
+    #parcours {
+        article {
+          width: 380px;
+        }
+    }
+
+}
+@media screen and (max-width: 1030px) {
   #parcours {
 
 
