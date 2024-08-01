@@ -40,7 +40,7 @@ export const Intro = () => {
                         <IconMail />
                 </Link>
 
-                <Link href={"https://www.linkedin.com/in/steven-durand-132a772b1/"} target={"_blank"}>
+                <Link href={"https://www.linkedin.com/in/steven-durand-3b347126b/"} target={"_blank"}>
                     <IconLinkedin />
                 </Link>
 
