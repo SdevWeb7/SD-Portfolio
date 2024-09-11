@@ -14,9 +14,11 @@
     font-size: 1.6rem;
   }
 
+
   .badges {
     margin-top: 1rem;
     display: flex;
+    justify-content: center;
     gap: 1rem;
   }
   .reseaux {
@@ -60,5 +62,4 @@
           gap: 2rem;
         }
     }
-
 }

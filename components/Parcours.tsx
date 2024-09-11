@@ -44,17 +44,14 @@ export const Parcours = () => {
             <ul>Auto-formation:
                 <li>C, C++, Python</li>
                 <li>HTML, CSS, Sass</li>
+                <li>SQL, Git, Mysql, Postgresql</li>
                 <li>Javascript, Php</li>
-                <li>SQL, Git</li>
-                <li>Symfony, ReactJS</li>
-                <li>Next.js, Prisma</li>
-                <li>TailwindCSS, Shadcnui</li>
-                <li>Typescript</li>
-            </ul>
-
-            <ul>École:
+                <li>Symfony, React.js</li>
                 <li>ExpressJS, ReactJS</li>
-                <li>Mysql, Sass</li>
+                <li>Next.js, Prisma</li>
+                <li>TailwindCSS, Shadcn-ui</li>
+                <li>Typescript</li>
+
             </ul>
 
             <ul>Stacks 💜💜💜:
@@ -65,67 +62,68 @@ export const Parcours = () => {
         </article>
 
 
+            <article className="technologies">
 
-        <article className="technologies">
-
-            <div className="container-logos">
-                <Image
-                    className={'c'}
-                    src={logoC}
-                    alt={'logo language C'} />
-
-
-                <Image
-                    className={'php'}
-                    src={logoPhp}
-                    alt={'logo language Php'} />
-
-                <Image
-                    className={'python'}
-                    src={logoPython}
-                    alt={'logo language Python'} />
-            </div>
+                <div className="container-logos">
+                    <Image
+                        className={'c'}
+                        src={logoC}
+                        alt={'logo language C'}/>
 
 
-            <div className="container-logos">
-                <IconSymfony className={'symfony'} />
-                <IconSQL className={'sql'} />
+                    <Image
+                        className={'php'}
+                        src={logoPhp}
+                        alt={'logo language Php'}/>
+
+                    <Image
+                        className={'python'}
+                        src={logoPython}
+                        alt={'logo language Python'}/>
+                </div>
+
+
+                <div className="container-logos">
+                    <IconSymfony className={'symfony'}/>
+                    <IconSQL className={'sql'}/>
 
                 </div>
 
 
-            <div className="container-logos">
-                <IconGit className={'git'} />
-                <Image
-                    className={'js'}
-                    src={logoJS}
-                    alt={'logo language Javascript'} />
+                <div className="container-logos">
+                    <IconGit className={'git'}/>
+                    <Image
+                        className={'js'}
+                        src={logoJS}
+                        alt={'logo language Javascript'}/>
 
-            </div>
-
-            <div className="container-logos">
-                <IconNode className={'node'} />
-                <Image
-                    className={'react'}
-                    src={logoReact}
-                    alt={'logo language ReactJS'} />
-            </div>
+                </div>
 
 
-            <div className="container-logos">
-                <Image
-                    className={'tailwind'}
-                    src={logoTailwindCss}
-                    alt={'logo language Tailwindcss'} />
-                <IconPrisma className={'prisma'} />
-            </div>
+                <div className="container-logos">
+                    <Image
+                        className={'tailwind'}
+                        src={logoTailwindCss}
+                        alt={'logo language Tailwindcss'}/>
+                    <IconPrisma className={'prisma'}/>
+                </div>
 
 
-            <div className="container-logos">
-                <IconNext className={'next'} />
-                <IconTS className={'ts'} />
-            </div>
-        </article>
+
+                <div className="container-logos">
+                    <IconNode className={'node'}/>
+                    <Image
+                        className={'react'}
+                        src={logoReact}
+                        alt={'logo language ReactJS'}/>
+                </div>
+
+
+                <div className="container-logos">
+                    <IconNext className={'next'}/>
+                    <IconTS className={'ts'}/>
+                </div>
+            </article>
         </div>
     </section>;
 }

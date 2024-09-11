@@ -64,13 +64,13 @@
     height: 50px;
   }
   .php {
-    transform: translateY(30px);
+    transform: translateY(15px) translateX(-10px);
     object-fit: contain;
     width: 50px;
     height: 50px;
   }
   .sql {
-    transform: scale(1.4) translateY(20px) translateX(-55px);
+    transform: scale(1.4) translateY(15px) translateX(-65px);
     width: 50px;
     height: 50px;
     path {
@@ -81,20 +81,20 @@
     }
   }
   .git {
-    transform: scale(.5) translateY(-5px) translateX(80px);
+    transform: scale(.5) translateY(-5px) translateX(-20px);
     path {
       width: 50px;
         height: 50px;
     }
   }
   .react {
-    transform: translateY(-80px) translateX(-100px);
+    transform: translateY(-115px) translateX(-120px);
     object-fit: contain;
     width: 50px;
     height: 50px;
   }
   .symfony {
-    transform: scale(1.4) translateX(10px) translateY(10px);
+    transform: scale(1.4) translateX(50px) translateY(10px);
     path {
     object-fit: contain;
     width: 50px;
@@ -109,7 +109,7 @@
 
   }
   .tailwind {
-    transform: translateY(-15px) translateX(20px);
+    transform: translateY(-20px) translateX(80px);
     object-fit: contain;
     width: 50px;
     height: 50px;
@@ -124,7 +124,7 @@
     height: 50px;
   }
   .prisma {
-    transform: translateY(-40px) translateX(-10px);
+    transform: translateY(0px) translateX(-10px);
     width: 100px;
     object-fit: contain;
     height: 50px;
@@ -152,8 +152,15 @@
         height: 50px;
       }
     }
+    .symfony {
+      transform: translateY(10px) translateX(0px);
+
+    }
     .react {
-      transform: translateY(-60px) translateX(-80px);
+      transform: translateY(-140px) translateX(-80px);
+    }
+    .tailwind {
+      transform: translateY(-10px) translateX(10px);
     }
   }
 }

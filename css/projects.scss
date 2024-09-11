@@ -9,29 +9,61 @@
   .second-project {
     margin-top: 7rem;
   }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
 
   img {
     width: 40%;
     height: auto;
     border-radius: 10px;
+    z-index: -1;
+    border: 1px solid lightgrey;
   }
 
-  .description {
+  .description-1, .description-2, .description-3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: .4rem;
+    gap: 1rem;
     box-shadow: 0 0 2px 2px var(--shadow);
     border-radius: 8px;
     padding: 1rem;
     margin-left: -4rem;
     background-color: var(--background);
+    max-width: 500px;
+  }
+  .description-2 {
+    margin-left: 0;
+    margin-right: -4rem;
   }
   .badges {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
+  }
 
+  .btn-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid var(--text);
+    background-color: var(--background);
+    color: var(--text);
+
+    padding: .5rem 1rem;
+    &:hover {
+      background-color: var(--text);
+      color: var(--background);
+
+    }
+  }
+  a:not(.btn-link) {
+    text-decoration: underline;
   }
 }
 
@@ -41,9 +73,13 @@
       .container {
         flex-direction: column;
       }
-      .description {
+      .container-2 {
+        flex-direction: column-reverse;
+      }
+      .description-1, .description-2, .description-3 {
         margin-left: 0;
-        margin-top: -4rem;
+        margin-right: 0;
+        margin-top: -3rem;
       }
 
       img {

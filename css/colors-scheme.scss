@@ -3,6 +3,7 @@
   --text: #111111;
   --primary: #732DA9;
   --shadow: rgba(0, 0, 0, 0.3);
+  --bg-badge: #333;
 }
 
 [data-theme="dark"] {
@@ -10,4 +11,5 @@
   --text: #FFFFFF;
   --primary: #bc87f1;
   --shadow: rgba(255, 255, 255, 0.3);
+  --bg-badge: var(--text);
 }
