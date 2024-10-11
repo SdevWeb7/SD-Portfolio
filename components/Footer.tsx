@@ -1,7 +1,5 @@
 "use client";
 
-import {useTheme} from "next-themes";
-import {useInView} from "react-intersection-observer";
 import React, {useEffect, useRef, useState, useTransition} from "react";
 import {mailAction} from "@/actions/mailAction";
 import toast from "react-hot-toast";
@@ -11,10 +9,6 @@ import {IconFrontEndMentor} from "@/svg/IconFrontEndMentor";
 import Link from "next/link";
 
 export const Footer = () => {
-    const {setTheme} = useTheme();
-    const { ref, inView } = useInView({
-        threshold: .4,
-    })
     const [isPending, startTransition] = useTransition();
     const [formDatas, setFormDatas] = useState({
         email: '',
@@ -26,14 +20,6 @@ export const Footer = () => {
     const isContentValid = formDatas.content.length > 10 && formDatas.content.length < 100;
     const isFormValid = isEmailValid && isSubjectValid && isContentValid;
     const formRef = useRef<HTMLFormElement>(null);
-
-    useEffect(() => {
-        if (inView) {
-            setTheme('dark');
-        } else {
-            setTheme('light');
-        }
-    }, [inView]);
 
 
     const handleSubmit =  () => {
@@ -64,12 +50,13 @@ export const Footer = () => {
 
 
 
-    return <section ref={ref} id={'footer'}>
+    return <section id={'footer'}>
         <h2>Contact</h2>
         <form action={handleSubmit} ref={formRef}>
 
             <label htmlFor="email">Votre adresse e-mail</label>
             <input
+                className={'bg-white'}
                 onChange={handleInputChange}
                 type="email"
                 id={"email"}
@@ -80,6 +67,7 @@ export const Footer = () => {
 
             <label htmlFor="subject">Sujet du message</label>
             <input
+                className={'bg-white'}
                 onChange={handleInputChange}
                 type="text"
                 name={"subject"}
@@ -90,6 +78,7 @@ export const Footer = () => {
 
             <label htmlFor="content">Votre message</label>
             <textarea
+                className={'bg-white'}
                 onChange={handleInputChange}
                 name="content"
                 value={formDatas.content}
